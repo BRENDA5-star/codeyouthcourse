@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="login-form"></form>
+
+    <center>
+<table>  
+ 
+    <tr>
+        <td> <label for="departure date" ><b>Departure Date:</b></label></td>
+        <td> <label for="departure time"><b>Departure Time</b></label></td>
+        <td></td>
+    </tr>
+
+    <tr>
+      <td><input name="departure date" type="date"/></td>
+      <td><input name="departure time" type="time"required/></td>
+      
+    </tr>
+
+    <tr>
+        <td> <label for="return date"><b>Return Date:</b</label></td>
+        <td> <label for="return time"><b>Return Time</b></label></td>
+        
+    </tr>
+
+    <tr>
+        <td><input name="return date" type="date" required/></td>
+        <td><input name="return time" type="time"required/></td>
+        
+      </tr>
+
+    <tr>
+        <td> <label for="Number of guests/passengers"><b>Number of guests/passengers:</b></label></td>
+        <td> <label for="Type of room/Ticket"><b>Type of room/Ticket:</b></label></td>
+        
+    </tr>
+   
+    <tr>
+        <td>   <select name="passengers" id="passengers">
+            <option value="please select">Please Select</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select></td>
+
+        <td> <input type="radio" name="economy"/> Economy  
+            <input type="radio" name="premium"/> Premium
+            <br>
+            <input type="radio" name="business"/> Business 
+            <input type="radio" name="deluxe"/> Deluxe 
+            </td>
+        
+    </tr>
+
+   </table>
+</center>
+  <br>
+  <br>
+
+<center>
+  <figcaption id="img-caption">
+    Google Map
+  </figcaption>
+  <iframe width="500" height="400" frameborder="2" src="https://www.bing.com/maps/embed?h=400&w=500&cp=45.33594773295688~-75.91091394424438&lvl=16&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+</iframe>
+</center>
+  <br>
+  <br>
+  <center>
+  <button type="book" >BOOK</button>
+</center>
+</form>
+  
