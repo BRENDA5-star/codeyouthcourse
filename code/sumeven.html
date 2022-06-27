@@ -8,15 +8,17 @@
 </head>
 <body>
     <script>
+document.write("<h1>sum of even numbers</h1>");   
+n= prompt('Enter a number: ');
+
+let sum=0;
+for (let i = 0; i <= n; i++)
+if(i % 2 == 0){
+  sum+=i;
     
-let n = 10;
-
-
-for (let i = 1; i <= n; i++) 
-{
-    console.log("OTTAWA");
 }
 
+console.log(`The sum ${n} numbers  is ${sum}`);
 
 
 
@@ -25,3 +27,5 @@ for (let i = 1; i <= n; i++)
         
     </body>
     </html>
+
+

@@ -9,15 +9,17 @@
 <body>
     <script>
     
-let n = 10;
+    document.write("<h1>Factorial of a number</h1>");
+ n= prompt('Enter a number: ');
 
-
-for (let i = 1; i <= n; i++) 
-{
-    console.log("OTTAWA");
+let fact=1;
+for (let i = 1; i <= n; i++)
+ {
+  fact=fact*i;
+    
 }
 
-
+console.log(`The factorial of ${n} is ${fact}`);
 
 
 </script>
@@ -25,3 +27,5 @@ for (let i = 1; i <= n; i++)
         
     </body>
     </html>
+
+
