@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+
+let marks = [85,19,94,77,10,73,60,59,18,6,24,33,19,5,82] ;
+//with filter
+let passMarks = marks.filter((marks) => (marks >= 80));
+console.log("Passed",passMarks);
+let failMarks = marks.filter((marks) => (marks< 80));
+console.log("failed",failMarks);
+//without filter
+
+
+
+for(let i = 0; i <= marks.length; i++) 
+{
+    if(marks[i] >= 80)
+    {
+    console.log("Passed",marks[i]);
+   
+    }
+    else
+    {
+    console.log("failed",marks[i]);
+    }
+}
+
+
+</script>
+    
+
+
+
+</body>
+</html>

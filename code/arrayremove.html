@@ -12,17 +12,15 @@
 
 // array of words
 const words =['burger', 'fries', 'coke', 'donuts', 'salad', 'nuggets'];
+console.log("original array",words);
 
 const splicearr= words.splice(0,3);
-
-console.log(splicearr);
-console.log(words);
-
-words.push('burger', 'fries', 'coke');
-console.log(words);
+console.log("spliced",splicearr);
+console.log("original after spliced",words);
 
 
-
+const iceadd= words.splice(3,0,'burger','fries','coke');
+console.log("array after adding elements",words);
 
 
 

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+
+    let arr = ["Hello", "What", "Are", "You"]
+
+//with forEach
+arr.forEach(element => {
+    console.log(element.length);
+});
+
+//without forEach
+for (let i=0; i<arr.length; i++) {
+   console.log(arr[i].length)
+};
+
+
+
+
+
+
+let numArray = [13, 84, 21, 58, 41, 20, 63];
+
+//with filter
+let filtered = numArray.filter(numArray => numArray <=50);
+console.log("with filter",filtered)
+
+
+
+//without filter
+for(let i = 0; i <= numArray.length; i++) 
+{
+    if(numArray[i] <=50)
+    {
+    console.log(numArray[i]);
+    
+    }
+    
+}
+
+
+
+let sortarr= numArray.sort();
+console.log(sortarr);
+
+
+</script>
+    
+</body>
+</html>
