@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>   
+document.write("<h1>july 2 assignment</h1>");
+
+/*
+Array Method Questions (Beginner)
+​
+Question 1
+ let pets = ['dog', 'cat', 'bird', 'hamster', 'snake',]
+ Filter the array above and create a new array called [myPets] with pets that have 4 or more letters in their name.
+​
+​*/
+
+
+
+let pets = ['dog', 'cat', 'bird', 'hamster', 'snake'];
+let myPets = pets.filter((pets) => (pets.length >= 4));
+console.log("mypets",myPets);
+/*
+Question 2
+ Use the map method on the myPets array to create a new array that logs to the console "I have a pet [pet]", the type of pet will be from the myPet array
+*/
+
+let newApp = myPets.map(pets)  
+console.log('I have a pet '${myPets});
+
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>   
+document.write("<h1>Array Method Questions (Intermediate)</h1>");
+
+/*
+Array Method Questions (Intermediate)
+!For the second question if you want to challenge yourself use forEach(), otherwise feel free to use a for loop
+​
+1.
+let cart = [19.48, 32.50, 1.99, 1.99, 3.19, 5.20]
+​
+Use the array cart or create a similar one for this question
+Using the .map() method calculate the tax (13%) on each item in the array
+Console.log() your new array
+!to calculate tax use this formula (price * 13) / 100*/
+
+
+let cart = [19.48, 32.50, 1.99, 1.99, 3.19, 5.20];
+
+// function to compute tax 
+function taxCalc(element) {
+    let tax=(element* 13) / 100
+  console.log("Tax for:",tax);
+}
+
+// compute tax of each element
+cart.map(taxCalc);
+
+
+/*
+2.
+Using either a for loop or the .forEach() method add the tax amount to each item in the cart array
+Inside your loop/forEach, console.log() the value you just added together
+​*/
+
+for (let i = 0; i <= 5; i++) {
+let c=cart[i];
+console.log("c:",c);
+let d=(cart[i]* 13) / 100;
+console.log("d:",d);
+let total=c + d ;
+console.log("total:",total);
+}
+
+
+/*
+3.
+Using the .reduce() method add all the items in the cart array together to show a total
+!Your total might show alot of numbers after the decimal point, to reduce them add .toFixed(2) to the end of your total (eg. total.toFixed(2))
+​
+*/
+
+
+function sumreduction(accumulator, currentValue) {
+  return accumulator + currentValue;
+}
+
+let sum = cart.reduce(sumreduction);
+console.log("Sum:",(sum.toFixed(2))); 
+
+
+</script>
+
+
+
+</body>
+</html>

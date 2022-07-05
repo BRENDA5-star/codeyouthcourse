@@ -1,0 +1,90 @@
+   <body style="background-color:lightseagreen;">
+   <header class="header">
+      <h1 id="title" class="text-center" align="center"><b> Survey Form</b></h1>
+
+   
+     
+    </header>
+    <center>
+
+    <fieldset style="background-color:lightgray;">
+<p id="description" class="description text-center" align="center">
+            Let us know how can we improve freeCodeCamp
+</p>
+<table>
+<tr>
+<td><label id="name-label" for="name" ">Name:</label></td>
+<td><input type="text" name="name" id="name" placeholder="Enter your name" required /> </td>
+</tr>
+
+
+<tr>
+<td><label id="email-label" for="email">Email:</label></td>
+<td><input type="email" name="email" id="email" placeholder="Enter your Email" required/> </td>
+</tr>
+
+   
+<tr>
+<td><label id="number" for="number">Age<span class="clue">(optional):</span></label></td>
+<td><input type="number" name="age"id="number"min="10" max="99" placeholder="Age" /></td>
+</tr>
+   
+<tr>
+<td>Which option best describes your current role?</td>
+<td><select id="role" name="role"  required>
+<option disabled selected value>Select current role:</option>
+<option value="student">Student</option>
+<option value="job">Full Time Job</option>
+<option value="learner">Full Time Learner</option>
+<option value="preferNo">Prefer not to say</option>
+<option value="other">Other</option>
+</select></td>
+</tr> 
+
+<tr> 
+<td>How likely is that you would recommend freeCodeCamp to a friend?</td>
+<td><label><input name="user"value="definitely"type="radio"checked/>Definitely</label><br>
+<label><input name="user-"value="maybe"type="radio"/>Maybe</label><br>
+<label><input name="user-recommend"value="not-sure"type="radio"/>Not sure</label></td>
+</tr>
+    
+<tr> 
+<td>What do you like most in FCC?</td>
+<td><select id="most-like" name="mostLike" class="form-control" required>
+<option disabled selected value>Select an option</option>
+<option value="challenges">Challenges</option>
+<option value="projects">Projects</option>
+<option value="community">Community</option>
+<option value="openSource">Open Source</option>
+</select></td>
+</tr> 
+
+<tr> 
+<td> Things that should be improved in the future?<span class="clue">(Check all that apply)</span></td>
+  
+<td><label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox"/>Front-end Projects</label ></br>
+<label><input name="prefer"value="back-end-projects" type="checkbox" class="input-checkbox" />Back-end Projects</label ></br>
+<label><input name="prefer"value="data-visualization"type="checkbox"class="input-checkbox"/>Data Visualization</label></br>
+<label><input name="prefer"value="challenges"type="checkbox" class="input-checkbox"/>Challenges</label></br>
+<label><input name="prefer" value="open-source-community"type="checkbox"class="input-checkbox"/>Open Source Community</label></br>
+<label><input name="prefer"value="gitter-help-rooms"type="checkbox"class="input-checkbox"/>Gitter help rooms</label></br>
+<label><input name="prefer"value="videos"type="checkbox"class="input-checkbox"/>Videos</label></br>
+<label><input name="prefer"value="city-meetups" type="checkbox"class="input-checkbox"/>City Meetups</label></br>
+<label><input name="prefer"value="wiki"type="checkbox"class="input-checkbox"/>Wiki</label></br>
+<label><input name="prefer"value="forum" type="checkbox"class="input-checkbox"/>Forum</label></br>
+<label><input name="prefer"value="additional-courses"type="checkbox"class="input-checkbox"/>Additional Courses</label>
+</td> </tr>
+      
+ 
+     
+<tr> 
+<td> Any comments or suggestions?</td> 
+<td> <textarea id="comments" class="input-textarea" name="comment"placeholder="Enter your comment here..."></textarea></td> 
+</tr>      
+</form>
+</table> 
+<center>
+<button type="submit" id="submit" class="submit-button">Submit</button>
+</center>
+</fieldset>
+</body>

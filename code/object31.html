@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+1.
+Write an object that has two objects inside it named "test0" and "test1"
+inside both objects write the keys "testName", "numParticipants", and "testPass"
+fill the values as you want with testName being a string, numParticipants being a number, and testResult being a boolean
+
+check both tests using for in
+if it passed console.log(testName, "Passed with", numParticipants, "participants")
+if it failed console.log(testName, "Failed with", numParticipants, "participants")
+
+then console.log() your object
+*/
+
+   let tests=  { 
+ test0 :
+{ 
+ testName: "Firstlevel",
+    numParticipants: 20,
+    testPass: false, 
+    
+},
+ test1 : 
+{ 
+    testName: "Second level",
+    numParticipants: 10,
+    testPass: true, 
+    
+}
+};
+
+for(let key in tests){
+     if(tests[key]["testPass"] == true){
+         console.log(`${tests[key]["testName"]} passed with ${tests[key]["numParticipants"]} participants`)
+     }else{
+         console.log(`${tests[key]["testName"]} failed with ${tests[key]["numParticipants"]} participants`)
+     }
+ }
+ 
+ console.log(tests)
+</script>
+        
+        
+    </body>
+    </html>

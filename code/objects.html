@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+// object creation
+const person = { 
+    name: 'John',
+    age: 20,
+    address:
+    {country:"CANADA",
+    city:"ottawa",
+    province:"ON",
+    },
+};
+
+
+for (let age in person ) {
+    console.log(person["age"]);
+}
+
+person["email"]="abc@gmail.com";
+console.log(typeof person); // object
+console.log(person.name); // John
+console.log(person.email); // John
+console.log(person["age"]); // John
+console.log(person.address.city,person.address.country); // John
+
+console.log("keys",Object.keys(person));
+console.log("values",Object.values(person));
+console.log("key values",Object.entries(person));
+
+</script>
+        
+        
+    </body>
+    </html>
+   
+  
+  

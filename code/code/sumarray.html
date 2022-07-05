@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+document.write("<h1>Array</h1>");
+
+// array of words
+const words =  ["red", "yellow",  "green"];
+// push-add first element
+words.push("purple");
+console.log(words);
+// unshift
+words.unshift("pink");
+console.log(words);
+// shift
+words.shift("pink");
+console.log("shift:",words);
+
+// pop-remove last element
+let remo= words.pop();
+console.log(remo);
+
+// pop-remove last element
+let slicearr= words.slice(1,2);
+console.log(slicearr);
+
+// sort
+let sortarr= words.sort();
+console.log(sortarr);
+
+
+// reverse
+let revarr= words.reverse();
+console.log(revarr);
+
+
+
+// array of numbers
+const marks = [ 2, 4, 6, 8];
+let total=0;
+
+    
+for (let i = 0; i < marks.length; i++) {
+    total=total + marks[i];
+}
+
+console.log("sum is:",total);
+console.log("div is:",total/marks.length);
+</script>
+    
+</body>
+</html>
