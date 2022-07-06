@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let book =  
+            
+            {
+                title: 'The Hobbit',
+                author: 'J.R.R. Tolkien',
+                alreadyRead: true,
+               
+               
+                re: function() {
+            return this.author + "author of the book " + this.title +  "finished " + this.alreadyRead;
+            }
+
+            };
+ 
+            
+
+ 
+  if (book.alreadyRead == true) {
+    console.log('You already read "' + book.title + '" by ' + book.author);
+  } else {
+    console.log('You still need to read "' + book.title + '" by ' + book.author);
+  }
+
+
+       
+    </script>
+
+
+</body>
+
+</html>

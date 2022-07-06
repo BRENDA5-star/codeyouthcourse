@@ -12,35 +12,35 @@
     <script>
         /*
  2.
-    Write an object with 4 objects inside it. give those objects the names of books
+    Write an object with 4 objects inside it. give those objects the names of librarys
     inside those objects write the keys "Author", "publisher", "releaseDate"
     
-    console.log() each book name and it's information
+    console.log() each library name and it's information
     */
         let library = {
-            "wingsoffire":
+            wingsoffire:
             {
                 Author: "Firstlevel",
-                publisher:"Macmillan" ,
+                publisher: "Macmillan",
                 releaseDate: 1884,
 
             },
-            "Alice's Adventures in Wonderland":
+            AliceAdventuresinWonderland:
             {
                 Author: "Lewis Carroll",
                 publisher: "Macmillan",
                 releaseDate: 1865,
 
             },
-            "The Adventures of Huckleberry Finn":
+            TheAdventuresofuckleberryFinn:
             {
                 Author: "Mark Twain",
-                publisher:"Charles L. Webster And Company",
+                publisher: "Charles L. Webster And Company",
                 releaseDate: 1884,
 
 
             },
-            "Don Quixote":
+            DonQuixote:
             {
                 Author: "Miguel de Cervantes",
                 publisher: 1605,
@@ -48,9 +48,14 @@
 
 
             }
-        };
-        console.log(library.author)
 
+
+        };
+
+        console.log("keys",Object.keys(library));
+        console.log("values",Object.values(library));
+        console.log("key values",Object.entries(library));
+      
     </script>
 
 

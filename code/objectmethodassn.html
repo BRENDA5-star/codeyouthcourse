@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let books =[
+
+        {
+            title: 'The Hobbit',
+            author: 'J.R.R. Tolkien',
+            alreadyRead: true
+        },  
+        {
+            title: 'The Adventures of Huckleberry Finn',
+            author: 'Mark Twain',
+            alreadyRead: true
+
+        },
+
+        {
+            title: 'Alice Adventures in Wonderland',
+            author: 'Lewis Carroll',
+            alreadyRead: false,
+
+
+
+
+            re: function() {
+            return this.author + "author of the book " + this.title +  "finished " + this.alreadyRead;
+            }
+        }
+    ];
+
+
+
+    for (let i = 0; i <=books.length; i++) {
+        book = books[i];
+        if (book.alreadyRead == true) {
+            console.log('You already read "' + book.title + '" by ' + book.author);
+        } else {
+            console.log('You still need to read "' + book.title + '" by ' + book.author);
+        }
+
+    }
+
+    </script>
+
+
+</body>
+
+</html>
