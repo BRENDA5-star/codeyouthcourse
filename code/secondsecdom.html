@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+    </style>
+</head>
+<body>
+    
+<h1 id="heading">Welcome to coding</h1>  
+
+<button onclick="change()">Append</button>
+<script>
+    function change()
+    {
+const myDiv = document.createElement("div");
+myDiv.innerHTML = "div";
+document.body.appendChild(myDiv);
+myDiv.style.color="red"
+console.log(myDiv);
+
+const para1 = document.createElement("p");
+para1.innerHTML = " Paragraph 1";
+myDiv.appendChild(para1);
+para1.style.color="blue"
+console.log(para1);
+
+const para2 = document.createElement("p");
+para2.innerHTML = "Paragraph 2";
+myDiv.appendChild(para2);
+para2.style.color="blue"
+console.log(para2);
+
+}
+
+
+</script>
+
+</body>
+</html>

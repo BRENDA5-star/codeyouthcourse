@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <h1 id>Colours</h1>
+
+<button onclick="change()">Append</button>
+<script>
+    function change()
+ {
+ const myDiv = document.createElement("div");
+ myDiv.innerHTML = "DIV";
+document.body.appendChild(myDiv);
+console.log(myDiv);
+
+const uladd = document.createElement("ul");
+uladd.innerHTML = "ul";
+myDiv.appendChild(uladd);
+uladd.style.color="red"
+console.log(uladd);
+
+const listadd1 = document.createElement("li");
+listadd1.innerHTML = "blue";
+uladd.appendChild(listadd1);
+listadd1.style.color="red"
+console.log(listadd1);
+
+const listadd2 = document.createElement("li");
+listadd2.innerHTML = "green";
+uladd.appendChild(listadd2);
+listadd2.style.color="red"
+console.log(listadd2);
+
+const listadd3 = document.createElement("li");
+listadd3.innerHTML = "red";
+uladd.appendChild(listadd3);
+listadd3.style.color="red"
+console.log(listadd3);
+}
+</script>
+
+</body>
+</html>

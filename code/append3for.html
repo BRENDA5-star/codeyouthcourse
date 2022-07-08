@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1 id>Colours</h1>
+
+    <button onclick="change()">Append</button>
+    <script>
+        function change() 
+        {
+            const myDiv = document.createElement("div");
+            myDiv.innerHTML = "Favourite";
+            document.body.appendChild(myDiv);
+            console.log(myDiv);
+
+            const uladd = document.createElement("ul");
+            uladd.innerHTML = "List of 3 colors";
+            myDiv.appendChild(uladd);
+            uladd.style.color = "green"
+            console.log(uladd);
+
+
+        const col=['blue','green','red']
+
+            for (let i = 0; i <= 2; i++) 
+            {
+
+                var list = document.createElement("li");
+                list.innerHTML = col[i]
+                uladd.appendChild(list);
+                list.style.color = "blue"
+               
+
+            }
+
+           
+        }
+
+
+    </script>
+
+</body>
+
+</html>
