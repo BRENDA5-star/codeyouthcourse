@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id ="header">WEB DEVELOPMENT</h1>
+    <p id =first> CODE YOUTH</p>
+   
+    <button id="button" onmouseover="mouseoverfn()" onclick="colorfn()" ondblclick="ondbClick()"     >click</button>
+    <script >
+
+        document.getElementById("header").addEventListener("mouseover", mouseoverfn);
+        document.getElementById("first").addEventListener("click", colorfn);
+       
+
+        function mouseoverfn() {
+         header.style.color="purple"
+        }
+
+        function colorfn() {
+        first.style.background = "gray";
+        }
+
+        function ondbClick(){
+
+    const button = document.getElementById('button');
+
+button.addEventListener('click', function ondbClick() {
+  button.style.backgroundColor = 'black';
+  button.style.color = 'white';
+});
+
+        }
+
+      
+      </script>
+</body>
+</html>

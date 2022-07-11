@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ /*
+Warmup Excersise
+Create an h1 tag that says "My DOM Questions :)"
+append it to the body
+1.
+    <ul class="evilList">
+        <li>Cheese</li>
+        <li>Orange</li>
+        <li>Flowers</li>
+    </ul>
+    Copy and paste the html from above this into your html file
+    Add two more list items to the list
+
+*/
+
+ </style>
+</head>
+<body>
+    
+    <ul Id="evilList">
+        <li>Cheese</li>
+        <li>Orange</li>
+        <li>Flowers</li>
+    </ul>
+<button onclick="change()">click</button>
+<script>
+function change()
+{
+const heading= document.createElement("h1")
+heading.innerHTML="My DOM Questions :"
+document.body.appendChild(heading)
+console.log(heading)
+
+
+const node = document.createElement("li");
+const textnode = document.createTextNode("Water");
+node.appendChild(textnode);
+document.getElementById("evilList").appendChild(node);
+
+
+const node1 = document.createElement("li");
+const textnode1 = document.createTextNode("Biscuit");
+node1.appendChild(textnode1);
+document.getElementById("evilList").appendChild(node1);
+
+}
+    </script>
+
+</body>
+
+</html>

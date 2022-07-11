@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+const cars = [
+  {
+    time: 1568329654807,
+    speed: 40
+  },
+  {
+    time: 1568329821632,
+    speed: 42
+  },
+  {
+    time: 1568331115463,
+    speed: 35
+  }
+]
+
+const speed = 38
+const carPassing = (cars, speed) => {
+  cars.push({ time : Date.now(),
+                speed : 25
+    });
+  return cars;  
+}
+
+console.log(carPassing(cars, speed));
+</script>
+</body>
+</html>

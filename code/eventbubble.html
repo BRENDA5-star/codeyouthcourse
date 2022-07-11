@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Javascript - DOM Event Bubbling</title>
+<style>
+    .border,
+    .border * {
+      margin: 10px;
+      border: 1px solid tomato;
+    }
+  </style>
+</head>
+<body>
+<h2>Event bubbling fires the event up in DOM tree.</h2>
+<p>Click any element box below.</p>
+<main class="border" id="main">MAIN
+<div id="div">DIV
+<p id="p">P</p>
+</div>
+</main>
+<script>
+    document.getElementById("p").addEventListener("click", function () { alert("P element") });
+    document.getElementById("div").addEventListener("click", function () { alert("DIV element also fired") });
+    document.getElementById("main").addEventListener("click", function () { alert("MAIN element also fired") });
+  </script>
+</body>
+</html>

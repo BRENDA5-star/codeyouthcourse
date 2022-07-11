@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   
+    <script>
+/*
+ 4.
+ Create a div 
+ make its width 10rem; and its height 10rem and give it a border
+ using event listeners change the background color to red when your mouse enters the div
+ change the background color to white when your mouse leaves the div
+ */
+ 
+ //Creating the div (ignore if you created in html)
+ let hovDiv = document.createElement("div")
+ hovDiv.setAttribute("style","border: 1px solid; width: 10rem; height: 10rem;")
+ 
+ //Event listener
+ hovDiv.addEventListener("mouseenter", hovDivHover)
+ hovDiv.addEventListener("mouseleave", hovDivUnhover)
+ 
+ function hovDivHover(){
+     hovDiv.style.backgroundColor = "red"
+ }
+ 
+ function hovDivUnhover(){
+     hovDiv.style.backgroundColor = "white"
+ }
+ 
+ //Appending (again ignore if you created in html)
+ document.body.appendChild(hovDiv)
+
+
+
+    </script>
+</body>
+
+</html>

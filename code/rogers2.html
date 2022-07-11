@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+2.
+    <table border="1">
+        <tr class="headerRow">
+            <th>Length</th>
+            <th>Width</th>
+            <th>Area</th>
+        </tr>
+    </table>
+    Copy and paste the html from above this into your html file
+    Fill out two more rows in the table and fill the table cells with numbers
+*/
+    </style>
+    <table border="1">
+        <tr class="headerRow">
+            <th>Length</th>
+            <th>Width</th>
+            <th>Area</th>
+        </tr>
+    </table>
+
+    <button onclick="change()">Append</button>
+    <script>
+        function change() {
+
+var table = document.getElementsByTagName("table");
+var headerRow = document.getElementsByClassName("headerRow");
+
+const newRow = document.createElement("tr");
+console.log(newRow);
+
+const uladd = document.createElement("th");
+uladd.innerHTML = "10";
+newRow.appendChild(uladd);
+console.log(uladd);
+
+
+
+
+
+
+        }
+
+
+    </script>
+
+    </body>
+
+</html>

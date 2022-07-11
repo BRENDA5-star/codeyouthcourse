@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+3.
+Recreate the following html using DOM
+    <div class="loginDiv">
+        <form action="get">
+            <p>Please Sign in</p>
+            <input type="text" id="user">
+            <input type="password" id="pass">
+            <input type="submit" value="Sign in ->">
+        </form>
+    </div>
+*/
+    </style>
+</head>
+
+<body>
+
+    <button onclick="change()">Create a Form</button>
+
+    <script>
+        function change() {
+            const loginDiv = document.createElement("div");
+            document.body.appendChild(loginDiv);
+            console.log(loginDiv);
+
+            const form = document.createElement("form");
+            loginDiv.appendChild(form);
+            console.log(form);
+            
+          
+            const para = document.createElement("p");
+            para.innerHTML = "Please Sign in";
+            form.appendChild(para);
+            console.log(para);
+
+            var x = document.createElement("INPUT");
+            x.setAttribute("type", "text");
+            x.setAttribute("id", "user");
+            form.appendChild(x);
+            
+            var y = document.createElement("INPUT");
+            y.setAttribute("type", "password");
+            y.setAttribute("id", "user");
+            form.appendChild(y);
+            
+            var z = document.createElement("INPUT");
+            z.setAttribute("type", "submit");
+            z.setAttribute("value", "Sign in");
+            form.appendChild(z);
+
+
+
+}
+
+
+    </script>
+
+</body>
+
+</html>
