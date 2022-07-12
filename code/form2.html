@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        label {
+
+           width:100px;
+            display: inline-block;
+        }
+
+        div {
+
+            margin-bottom: 10px;
+        }
+
+        div.btn {
+            margin-left: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    
+
+
+    <form name="login-form"  onsubmit="return validate()">
+        <div>
+            <label for="username">Username</label>
+            <input name="username" type="text" placeholder="Enter username" />
+        </div>
+        <div>
+            <label for="Email">Email</label>
+            <input name="email" type="text" placeholder="Enter email"/>
+        </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input name="password" id="password" type="password" placeholder="Enter password"/>
+        </div>
+
+        <div class="btn">
+           <input type="submit" value="Submit">
+           <input type="reset" value="Reset">
+        </div>
+    </form>
+
+<script>
+
+const name1= document.forms["login-form"]["username"]
+const name4= document.forms["login-form"]["password"]
+const name5= document.forms["login-form"]["email"]
+
+name4.onfocus=function(){
+name4.style.background="red"
+}
+name5.onblur=function(){
+name5.style.background="green"
+
+
+}
+name1.addEventListener("change", ()=>{
+            name1.style.color= "red"
+            name1.value=name1.value.toUpperCase()
+            
+        } )
+function validate(){
+
+const password1= document.getElementById("password")
+if(password1.value.length<3){
+alert("password should be minimum 3 ")
+password1.focus()
+return false;
+
+}
+return true;
+}
+</script>
+
+
+</body>
+
+</html>

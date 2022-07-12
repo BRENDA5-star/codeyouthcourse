@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    label {
+
+        width:100px;
+         display: inline-block;
+     }
+
+     div {
+
+         margin-bottom: 10px;
+     }
+
+     div.btn {
+         margin-left: 40px;
+     }
+ </style>
+</head>
+
+<body>
+ 
+
+
+ <form name="form" id="former" onsubmit="es()" >
+     <div>
+         <label for="username">Username</label>
+         <input name="username" type="text" placeholder="Enter username" />
+     </div>
+     <div>
+         <label for="Email">Email</label>
+         <input name="email" type="text" placeholder="Enter email"/>
+     </div>
+
+     <div>
+         <label for="password">Password</label>
+         <input name="password" id="password" type="password" placeholder="Enter password"/>
+     </div>
+
+     <div class="btn">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+     </div>
+ </form>
+<script>
+
+
+const form= document.getElementById("former")
+console.log(form)
+form.addEventListener("submit",function getuser(e){
+    e.preventDefault();
+    console.log(form.username.value)
+    console.log(form.password.value)
+    console.log(form.email.value)
+})
+
+
+function es(){
+const name1= document.forms["form"]["username"]
+console.log("name1",name1.value)
+const name4= document.forms["form"]["password"]
+console.log("name4",name4.value)
+const name5= document.forms["form"]["email"]
+console.log("name5",name5.value)
+
+}
+</script>
+
+
+</body>
+</html>
+
+

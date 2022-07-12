@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DOM TABLE CREATION</title>
     <style>
         /*
 2.
@@ -32,18 +32,35 @@
     <script>
         function change() {
 
-var table = document.getElementsByTagName("table");
-var headerRow = document.getElementsByClassName("headerRow");
-
-const newRow = document.createElement("tr");
-console.log(newRow);
-
-const uladd = document.createElement("th");
-uladd.innerHTML = "10";
-newRow.appendChild(uladd);
-console.log(uladd);
-
-
+    const theTable = document.getElementsByTagName("table")[0] //I'm using [0] because it's the only table in my html, that might not be true for you though
+ 
+ //Creating Elements
+ let tr1 = document.createElement('tr');
+ let tr2 = document.createElement('tr');
+ let tr1_td1 = document.createElement('td');
+ let tr1_td2 = document.createElement('td');
+ let tr1_td3 = document.createElement('td');
+ let tr2_td1 = document.createElement('td');
+ let tr2_td2 = document.createElement('td');
+ let tr2_td3 = document.createElement('td');
+ 
+ //Setting values
+ tr1_td1.innerHTML = 5
+ tr1_td2.innerHTML = 2
+ tr1_td3.innerHTML = 10
+ tr2_td1.innerHTML = 12
+ tr2_td2.innerHTML = 3
+ tr2_td3.innerHTML = 36
+ 
+ //Appending
+ tr1.appendChild(tr1_td1)
+ tr1.appendChild(tr1_td2)
+ tr1.appendChild(tr1_td3)
+ tr2.appendChild(tr2_td1)
+ tr2.appendChild(tr2_td2)
+ tr2.appendChild(tr2_td3)
+ theTable.appendChild(tr1)
+ theTable.appendChild(tr2)
 
 
 
