@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Select Element by Class</title>
+<style>
+    /* Some custom style */
+    *{
+        padding: 5px;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Highlight elements with class mark
+            $(".first").css("background", "yellow");
+        });
+
+ // Highlight all input elements with type text inside a form
+ $("form :text").css("background", "purple");
+  
+  // Highlight all input elements with type password inside a form
+  $("form :password").css("background", "blue");
+
+  // Highlight all input elements with type submit inside a form
+  $("form :submit").css("background", "violet");
+
+   
+
+
+        </script>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p class="first">This is first paragraph.</p>
+    <p class="first">This is second paragraph.</p>
+    <p>This is one more paragraph.</p>
+
+
+    <form>
+        <label>Name: <input type="text"></label>
+        <label>Password: <input type="password"></label>
+        <input type="submit" value="Sign In">
+    </form>
+
+
+</body>
+</html>

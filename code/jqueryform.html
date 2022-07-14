@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Form</title>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function () {
+
+    $("form :text").css("background", "lightgray");
+    $("form :password").css("background", "lightblue");
+    $("form :email").css("background", "cyan");
+});
+
+</script>
+</head>
+
+<body>
+    <style>
+        label {
+    
+            width:100px;
+             display: inline-block;
+         }
+    
+         div {
+    
+             margin-bottom: 10px;
+         }
+    
+         div.btn {
+             margin-left: 40px;
+         }
+     </style>
+    <form name="form" id="former" >
+        <div>
+            <label for="username">Username</label>
+            <input name="username" type="text" placeholder="Enter username" />
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input name="email" type="email" placeholder="Enter email"/>
+        </div>
+   
+        <div>
+            <label for="password">Password</label>
+            <input name="password" id="password" type="password" placeholder="Enter password"/>
+        </div>
+   
+        <div class="btn">
+           <input type="submit" value="Submit">
+           <input type="reset" value="Reset">
+        </div>
+    </form>
+</script>
+</body>
+</html>   
