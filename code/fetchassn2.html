@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>fetch</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+	<p id="city">city:</p>
+	<p id="street">street:</p>
+    <p id="suite">suite:</p>
+	<script>
+		const url="https://jsonplaceholder.typicode.com/users";
+		fetch(url)
+		.then((res) => {
+		
+			return res.json()
+		})
+		.then((data) =>{
+				console.log("data",data);
+			  console.log(data[1].address.city)
+              console.log(data[1].address.suite)
+	
+			
+				$("#city").append(data[1].address.city);
+                $("#street").append(data[1].address.street);
+                $("#suite").append(data[1].address.suite);
+				
+			
+	
+		})
+		.catch((err) => console.log("error",err))
+		</script>
+</body>
+</html>

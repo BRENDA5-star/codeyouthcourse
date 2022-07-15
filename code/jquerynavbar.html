@@ -54,14 +54,14 @@ $(document).ready(function () {
     console.log(event)
   });
   
-  $(event.currentTarget).mouseleave(function(event){
+  $(".navitem").mouseleave(function(event){
     $(event.currentTarget).css("background", "initial");
     console.log(event)
   });
 
-    $(event.currentTarget).click(function(event){
-    $(".selected").removeClass("selected") //Here I am removing the class "selected" from every element that has it
-    $("event.currentTarget").addClass("selected") //Then I add the class "selected" to the element I clicked on
+    $(".navitem").click(function(event){
+    $(".selected").removeClass("selected") 
+    $(event.currentTarget).addClass("selected") 
     console.log(event)
   });
 });
