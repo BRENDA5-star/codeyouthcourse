@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Form</title>
+
+
+
+<style>
+
+#navbar {
+background-color: gray;
+color:white;
+
+
+}
+#navbar p{
+display:inline-block;
+
+}
+p{
+margin:5px 10px 10px 0px;
+padding: 3px;
+
+}
+
+ 
+.selected{
+background: green !important;
+
+}
+
+</style>
+</head>
+<body>
+
+<div id="navbar">
+<p class ="navitem">Home</p>
+<p class="navitem">Images</p>
+<p class ="navitem">Maps</p>
+<p class="navitem">Contact</p>
+<p class="navitem">About</p>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<script>
+
+$(document).ready(function () {
+  $(".navitem").mouseenter(function(event) {
+    $(event.currentTarget).css("background","black");
+    console.log(event)
+  });
+  
+  $(event.currentTarget).mouseleave(function(event){
+    $(event.currentTarget).css("background", "initial");
+    console.log(event)
+  });
+
+    $(event.currentTarget).click(function(event){
+    $(".selected").removeClass("selected") //Here I am removing the class "selected" from every element that has it
+    $("event.currentTarget").addClass("selected") //Then I add the class "selected" to the element I clicked on
+    console.log(event)
+  });
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Stripe table</title>
+<style>
+  table {
+    font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+
+}
+
+</style>
+<script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+<script>
+
+
+
+$(document).ready(function () {
+//  odd places
+$("tr:odd").css("background", "white");
+//  even places
+$("tr:even").css("background", "lightgray","color", "red");
+$(".add-row").click(function(){
+    var addRow = "<tr><td>Brenda</td><td>zera </td> <td> 1000  </td></tr>";
+    $("table ").append(addRow);
+});
+});
+</script>
+</head>
+
+<body>
+<table border="1">
+
+<tr>
+<th id="firstname">Firstname</th>
+<th id="lastname">Lastname</th>
+<th id="points">Points</th>
+</tr>
+
+
+
+
+<tr>
+<td>Rose</td>
+<td>John </td>
+<td>1000</td>
+</tr>
+
+<tr>
+<td>Joseph</td>
+<td>Peter </td>
+<td>1000</td>
+</tr>
+
+<tr>
+<td>Reena</td>
+<td>Joseph</td>
+<td>2000</td>
+</tr>
+<input type="button" class="add-row" value="Add Row">
+</table>
+
+</body>
+</html>
