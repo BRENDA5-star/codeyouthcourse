@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+
+
+////////////////////////////// ~ jQuery ~ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// Question 1
+/*
+Using jQuery create a div that has a width of 100%, height of 10rem, and a border
+Give it a class
+Append it to the body
+*/
+$("body").append($("<div/>").css({"width":"100%","height":"10rem","border":"1px solid"}).addClass("keyBoard"))
+// Question 2
+/*
+Using jQuery add a keypress event listener to the body
+When you press a key append a p tag with the letter you typed into the div from question 1
+The p tag should display inline and have a font size of 10rem
+!Hint: remember (event)
+!!Hint: .originalEvent
+*/
+$("body").on("keypress",(event)=>{
+    $(".keyBoard").append($("<p/>").text(event.originalEvent.key).css({"display":"inline","font-size":"10rem"}))
+})
+// Question 3
+/*
+    <table border="1" style="width: 5rem; height: 5rem" class="myTable">
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    Copy and paste this HTML into your HTML file
+    Using jQuery put a random number from 0 - 10 inside each table cell
+    !Difficulty Tweak: Make it so no two cells can have the same number
+*/
+    //Regular
+    for(let i = 0; i < 4; i++){
+        $(`td:eq(${i})`).append(Math.floor(Math.random()*10))
+    }
+    $("td").empty();   //Ignore, don't use this line
+    //Hard
+    let numBank = [];
+    for(let i = 0; i < 4; i++){
+        let rng = Math.floor(Math.random()*10)
+        if(numBank.includes(rng) == false){
+        $(`td:eq(${i})`).append(rng)
+        numBank.push(rng)
+        }else{
+            i-=1
+        }
+    }
+// Question 4
+/*
+<p class="copyMe">Click me to copy</p>
+copy and paste this into your html
+Add a click event listener
+Every time you click on the p tag the text should be copied to your clipboard
+(You will probably need to google)
+*/
+$(".copyMe").on("click",(event)=>{
+    navigator.clipboard.writeText($(event.currentTarget).text())
+})
